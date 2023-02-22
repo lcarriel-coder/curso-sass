@@ -1,0 +1,66 @@
+//$theme-color:green;
+
+@import "colors";
+@import "mixins";
+
+
+@function double($a) {
+    @return ($a*2);
+}
+
+$bg-color: #AD141E;
+
+body {
+    background-color: rgb($bg-color,.9);
+}
+
+h1 {
+    color: $theme-color;
+}
+
+p {
+    color: $theme-color;
+}
+
+// .content{
+//     ul{
+//         li{
+//             a{
+//                 color:pink;
+//             }
+//         }
+//     }
+// }
+
+button {
+    background-color: purple;
+    @include blockButton(green);
+}
+
+.newButton {
+    @include blockButton(yellow);
+    background-color: green;
+
+}
+
+
+.common{
+    background-color: red;
+    height: 100px;
+    width: (100%/2);
+}
+
+.container {
+    width: 100%;
+
+    .leftCol {
+        float: left;
+        @extend .common;
+    }
+
+    .rightCol {
+        float: left;
+        @extend .common;
+    
+    }
+}

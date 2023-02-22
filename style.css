@@ -1,0 +1,47 @@
+body {
+  background-color: rgba(173, 20, 30, 0.9);
+}
+
+h1 {
+  color: brown;
+}
+
+p {
+  color: brown;
+}
+
+button {
+  background-color: purple;
+  border-radius: 10px;
+  display: inline-block;
+  border: none;
+  padding: 15px 32px;
+  color: green;
+}
+
+.newButton {
+  border-radius: 10px;
+  display: inline-block;
+  border: none;
+  padding: 15px 32px;
+  color: yellow;
+  background-color: green;
+}
+
+.common, .container .rightCol, .container .leftCol {
+  background-color: red;
+  height: 100px;
+  width: 50%;
+}
+
+.container {
+  width: 100%;
+}
+.container .leftCol {
+  float: left;
+}
+.container .rightCol {
+  float: left;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -10,8 +10,18 @@
 
 $bg-color: #AD141E;
 
+
+
 body {
-    background-color: rgb($bg-color,.9);
+    //background-color: rgb($bg-color,.9);
+    $a:5;
+    $b:10;
+    @if $a == 5 and $b == 10 {
+        background-color: red;
+    }
+    @else{
+        background-color: green;
+    }
 }
 
 h1 {
@@ -21,6 +31,43 @@ h1 {
 p {
     color: $theme-color;
 }
+
+$map_name:(
+    a:red,
+    b:blue,
+);
+
+$map-one: (
+    color1: red,
+    color2:blue
+);
+
+$map-two: (
+    color3: green,
+    color4:yellow,
+);
+
+$merged-map:map-merge($map-one,$map-two);
+$name:"Jhon is a programmer";
+
+h2{
+    //color:map-get($map_name,b);
+    // @if map-has-key($map_name,c){
+    //     content: 'map has the key a';
+    // }
+    // @else{
+    //     content: 'map does not have the key';
+    // }
+    color:map-get($merged-map,color4);
+    //content:str-insert($name,"T",5);
+    //content:str-index($name,"programmer");
+    //content:to-upper-case($name);
+    content:to-lower-case($name);
+}
+
+
+
+
 
 // .content{
 //     ul{
@@ -62,5 +109,14 @@ button {
         float: left;
         @extend .common;
     
+    }
+}
+
+
+$menu:(home,contact,about,blog);
+
+@each $item in $menu{
+    .#{$item}{
+        background:url('../img/#{$item}/.png')
     }
 }

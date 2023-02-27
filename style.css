@@ -1,13 +1,117 @@
+.top-bar {
+  background: #00BcD4;
+}
+.top-bar .top-bar-right a {
+  background: #00BcD4;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.banner {
+  width: 100%;
+}
+.banner .banner-text {
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-align: center;
+  top: 35%;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.banner .banner-subtext {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-top: 20%;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.skills h3 {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  padding: 30px;
+  text-transform: uppercase;
+  color: white;
+  margin: 0px;
+  background: #00BcD4;
+}
+
+.skill-container {
+  width: 100%;
+  height: 500px;
+  align-content: center;
+}
+.skill-container .skill-box {
+  display: inline-block;
+  border: 2px solid;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  margin-left: 90px;
+  margin-top: 150px;
+  border-color: white;
+  font-size: 1.5em;
+  padding-top: 80px;
+  font-weight: bold;
+  border-radius: 100px;
+  background-color: #00BcD4;
+  color: white;
+}
+
+.projects-container {
+  width: 100%;
+  margin-top: 150px;
+}
+.projects-container .project-info {
+  margin-top: 10px;
+  padding-left: 50px;
+}
+.projects-container .project-info .p {
+  padding-right: 50px;
+}
+
+.client-container .client-image {
+  text-align: center;
+  margin-top: 150px;
+}
+.client-container .client-image img {
+  width: 200px;
+  height: 200px;
+}
+.client-container .client-name {
+  text-align: center;
+}
+.client-container .client-comment {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 50px;
+  margin-top: 150;
+}
+footer ul {
+  list-style-type: none;
+}
+
 body {
-  background-color: red;
+  background-color: gray;
 }
 
 h1 {
-  color: brown;
+  color: #00BcD4;
 }
 
 p {
-  color: brown;
+  color: #00BcD4;
 }
 
 h2 {
@@ -33,7 +137,7 @@ button {
   background-color: green;
 }
 
-.common, .container .rightCol, .container .leftCol {
+.container .rightCol, .container .leftCol {
   background-color: red;
   height: 100px;
   width: 50%;
@@ -63,6 +167,52 @@ button {
 
 .blog {
   background: url("../img/blog/.png");
+}
+
+.a-1 {
+  height: 50px;
+  width: 100px;
+  background-color: #e6e600;
+}
+
+.a-2 {
+  height: 50px;
+  width: 200px;
+  background-color: #cccc00;
+}
+
+.a-3 {
+  height: 50px;
+  width: 300px;
+  background-color: #b3b300;
+}
+
+.a-4 {
+  height: 50px;
+  width: 400px;
+  background-color: #999900;
+}
+
+.a-5 {
+  height: 50px;
+  width: 500px;
+  background-color: olive;
+}
+
+.a-6 {
+  height: 50px;
+  width: 600px;
+  background-color: #666600;
+}
+
+.a-7 {
+  height: 50px;
+  width: 700px;
+  background-color: #4d4d00;
+}
+
+.menu-demo {
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
